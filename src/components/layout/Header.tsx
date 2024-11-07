@@ -46,6 +46,7 @@ const Header: React.FC<HeaderProps> = ({
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeDropdown, setActiveDropdown] = useState<DropdownMenu>(null);
+  
 
   const categories: Category[] = [
     { name: 'Fruits & Vegetables', link: '/Fruits', subcategories: [
@@ -256,7 +257,7 @@ const Header: React.FC<HeaderProps> = ({
             {/* All Categories Dropdown */}
             <div className="relative group">
       <button 
-        className="flex items-center space-x-2"
+        className="flex items-center space-x-2 hover:text-purple-700"
         onClick={() => handleDropdown('categories')}
       >
         <img src={allCategoriesIcon} alt="Category Icon" className="h-5 w-5 text-gray-500" />
@@ -266,7 +267,8 @@ const Header: React.FC<HeaderProps> = ({
       {activeDropdown === 'categories' && (
         <div className="absolute top-full left-0 w-64 bg-white shadow-lg rounded-md mt-1 py-2 z-50">
           {categories.map((category) => (
-            <div key={category.name} className="relative">
+            <div key={category.name} className="relative" onMouseEnter={() => setActiveSubcategory(category.name)}
+            onMouseLeave={() => setActiveSubcategory(null)}>
               <a
                 href={category.link}
                 className="flex items-center px-4 py-2 hover:bg-gray-50 cursor-pointer"
@@ -415,4 +417,4 @@ const Header: React.FC<HeaderProps> = ({
   );
 };
 
-export default Header;
+export default Header
