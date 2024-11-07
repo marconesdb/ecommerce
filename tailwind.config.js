@@ -11,6 +11,7 @@ export default {
         customOrange: '#EA580C',
         customWhite: '#FFFFFF',
         customBlack: '#030712',
+        customgreen: '#166534',
       },
 
     },
