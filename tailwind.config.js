@@ -12,8 +12,12 @@ export default {
         customWhite: '#FFFFFF',
         customBlack: '#030712',
         customgreen: '#166534',
+        customPeach: '#ffedd5',
+        customBrown: '#7C2D12', 
       },
-
+      screens: {
+        '2xl': '1640px', // Define um breakpoint para telas maiores que 1640px
+      },
     },
   },
   plugins: [],
