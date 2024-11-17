@@ -211,16 +211,13 @@ const Carousel: React.FC<CarouselProps> = ({ isDropdownOpen }) => {
               <button className="w-20 sm:w-32 flex items-center justify-center gap-2 rounded-full bg-white px-3 sm:px-6 py-1.5 sm:py-3 text-xs sm:text-sm text-black hover:bg-customBrown font-bold whitespace-nowrap">
               Shop Now <span>→</span>
             </button>
-
-
-
     
             </div>
           </div>
         </div>
       </div>
       ),
-      imageUrl: "/public/img-carrossel-4.svg",
+      imageUrl: "/img-carrossel-4.svg",
       bgStyle: ""
     },
   ];
