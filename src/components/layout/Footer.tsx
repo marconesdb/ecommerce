@@ -11,147 +11,112 @@ import iconPaypal from '../../assets/icons/Paypal.svg'
 import iconSkrill from '../../assets/icons/Skrill.svg'
 import iconKlarna from '../../assets/icons/Klarna.svg'
 
-
-
-
 const Footer = () => {
   return (
-    <footer className="w-full bg-customGrayy pt-8 pb-4">
+    <footer className="w-full bg-customGrayy px-4 sm:px-8 pt-8 pb-4">
       {/* Newsletter Section */}
-      <div className="w-full px-8 mb-8">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-gray-400 pb-8">
-          <div className="max-w-md">
-            <h3 className="text-xl font-semibold mb-2">Join our newsletter for £10 offs</h3>
-            <p className="text-gray-600 text-sm">Register now to get latest updates on promotions & coupons. Don't worry, we not spam!</p>
+      <div className=" mx-auto mb-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 border-b border-gray-400 pb-8">
+          <div className="w-full md:w-1/2 text-center md:text-left mb-4 md:mb-0">
+            <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-2">Join our newsletter for £10 offs</h3>
+            <p className="text-gray-600 text-xs sm:text-sm">Register now to get latest updates on promotions & <br/>coupons. Don't worry, we not spam!</p>
           </div>
 
-
-           <div className="w-full md:w-auto">
-            <div className="flex flex-col sm:flex-row gap-2 items-center border rounded-md bg-white">
-            <Mail className="text-gray-400  w-5 h-5  ml-4 " />
+          <div className="w-full md:w-1/2 max-w-md">
+            <div className="flex flex-col sm:flex-row items-center border rounded-md bg-white">
+              <Mail className="text-gray-400 w-5 h-5 ml-4 hidden sm:block" />
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="px-4 py-2  rounded-md flex-grow "
-                
+                className="w-full px-4 py-2 rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-purple-300"
               />
-              <button className="px-6 py-2 bg-purple-600 text-white border-t border-b border-r rounded-tr-lg rounded-br-lg hover:bg-purple-700 font-bold">
-              SEND
-            </button>
-
+              <button className="w-full sm:w-auto px-4 py-2 bg-purple-600 text-white rounded-r-lg hover:bg-purple-700 font-bold transition duration-300">
+                SEND
+              </button>
             </div>
-            <p className="text-xs text-gray-500 mt-2">
-              By subscribing you agree to our <span className='text-purple-600 font-semibold cursor-pointer'> Terms & Conditions and Privacy & Cookies Policy.</span>
+            <p className="text-xs text-gray-500 mt-2 text-center md:text-left">
+              By subscribing you agree to our <span className='text-purple-600 font-semibold cursor-pointer hover:text-gray-600'> Terms & Conditions and Privacy & Cookies Policy.</span>
             </p>
           </div>
-
-
-
-          
         </div>
       </div>
 
       {/* Main Footer Content */}
-      <div className="w-full px-8 ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 border-b border-gray-400 pb-8">
+      <div className="mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 border-b border-gray-400 pb-8">
           {/* Help Section */}
-          <div>
-            <h4 className="font-semibold mb-4">Do You Need Help?</h4>
-            <p className="text-sm text-gray-600 mb-4">Autoseligen syr. Nek diarask fröbomba. Nörantipol kynoda nynat. Pressa fåmoska.</p>
-          <div className="space-y-4">
-            <div className="flex items-start gap-2">
-              <Phone className="w-5 h-5" />
-              <div>
-                <p className='text-gray-600 text-sm'>Monday-Friday: 08am-9pm</p>
-                <span className="font-semibold text-[20px]">0 800 300-353</span>
-
+          <div className="text-center sm:text-left">
+            <h4 className="font-semibold mb-4 text-sm sm:text-base">Do You Need Help?</h4>
+            <p className="text-xs text-gray-600 mb-4 line-clamp-3">Autoseligen syr. Nek diarask fröbomba. Nörantipol kynoda nynat. Pressa fåmoska.</p>
+            <div className="space-y-4">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 mb-2 sm:mb-0 text-gray-600" />
+                <div className="text-center sm:text-left">
+                  <p className='text-gray-600 text-xs'>Monday-Friday: 08am-9pm</p>
+                  <span className="font-semibold text-sm sm:text-base">0 800 300-353</span>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2">
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 mb-2 sm:mb-0 text-gray-600" />
+                <div className="text-center sm:text-left">
+                  <p className='text-xs text-gray-600'>Need help with your order?</p>
+                  <span className="text-xs sm:text-sm font-semibold">info@example.com</span>
+                </div>
               </div>
             </div>
-            <div className="flex items-start gap-2">
-              <Mail className="text-sm w-5 h-5" />
-              <div>
-                <p className='text-sm text-gray-600'>Need help with your order?</p>
-                <span className="text-sm font-semibold ">info@example.com</span>
-              </div>
+          </div>
+
+          {/* Other sections remain similar, with slight responsiveness tweaks */}
+          {['Make Money with Us', 'Let Us Help You', 'Get to Know Us'].map((sectionTitle, index) => (
+            <div key={sectionTitle} className="text-center sm:text-left">
+              <h4 className="font-semibold mb-4 text-sm sm:text-base">{sectionTitle}</h4>
+              <ul className="space-y-2 text-xs text-gray-600">
+                {getSectionLinks(index).map((item) => (
+                  <li 
+                    key={item} 
+                    className='hover:text-purple-600 cursor-pointer transition duration-300'
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-
-          </div>
-
-          {/* Make Money Section */}
-          <div>
-            <h4 className="font-semibold mb-4">Make Money with Us</h4>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li className='hover:text-purple-600 cursor-pointer'>Sell on Grogin</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Sell Your Services on Grogin</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Sell on Grogin Business</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Sell Your Apps on Grogin</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Become an Affiliate</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Advertise Your Products</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Self-Publish with Us</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Become an Blowwe Vendor</li>
-            </ul>
-          </div>
-
-          {/* Let Us Help Section */}
-          <div>
-            <h4 className="font-semibold mb-4">Let Us Help You</h4>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li className='hover:text-purple-600 cursor-pointer'>Accessibility Statement</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Your Orders</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Returns & Replacements</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Shipping Rates & Policies</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Refund and Returns Policy</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Privacy Policy</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Terms and Conditions</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Cookie Settings</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Help Center</li>
-            </ul>
-          </div>
-
-          {/* Get to Know Us Section */}
-          <div>
-            <h4 className="font-semibold mb-4">Get to Know Us</h4>
-            <ul className="space-y-2 text-sm text-gray-600">
-              <li className='hover:text-purple-600 cursor-pointer'>Careers for Grogin</li>
-              <li className='hover:text-purple-600 cursor-pointer'>About Grogin</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Investor Relations</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Grogin Devices</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Customer reviews</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Social Responsibility</li>
-              <li className='hover:text-purple-600 cursor-pointer'>Store Locations</li>
-            </ul>
-          </div>
+          ))}
 
           {/* Download App Section */}
-          <div>
-            <h4 className="font-semibold mb-4">Download our app</h4>
+          <div className="text-center sm:text-left">
+            <h4 className="font-semibold mb-4 text-sm sm:text-base">Download our app</h4>
             <div className="space-y-3">
-              <div className="flex items-center gap-2">
-                <img src={iconPlayStore} className="h-12" />
-                <span className="text-xs">Download App Get -10% discount</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <img src={iconApp} alt="App Store" className="h-12" />
-                <span className="text-xs">Download App Get -20% discount</span>
-              </div>
+              {[
+                { icon: iconPlayStore, text: 'Download App Get -10% discount' },
+                { icon: iconApp, text: 'Download App Get -20% discount' }
+              ].map(({ icon, text }) => (
+                <div key={text} className="flex flex-col sm:flex-row items-center gap-2 justify-center sm:justify-start">
+                  <img src={icon} className="h-8 sm:h-10" />
+                  <span className="text-xs text-gray-700">{text}</span>
+                </div>
+              ))}
             </div>
             
             <div className="mt-6">
-              <p className="text-sm font-semibold mb-3">Follow us on social media:</p>
-              <div className="flex gap-3">
-                <a href="#" className="text-blue-600 hover:text-blue-700">
-                  <div className="w-8 h-8  flex items-center justify-center"> <img src={iconFacebook} alt="Facebook" className="h-6" /></div>
-                </a>
-                <a href="#" className="text-black hover:text-gray-800">
-                  <div className="w-8 h-8  flex items-center justify-center"><img src={iconX} alt="X" className="h-6" /></div>
-                </a>
-                <a href="#" className="text-pink-600 hover:text-pink-700">
-                  <div className="w-8 h-8   flex items-center justify-center"><img src={iconInstagram} alt="Instagram" className="h-6" /></div>
-                </a>
-                <a href="#" className="text-blue-800 hover:text-blue-900">
-                  <div className="w-8 h-8   flex items-center justify-center"><img src={iconLinkedin} alt="Linkedin" className="h-6" /></div>
-                </a>
+              <p className="text-xs font-semibold mb-3">Follow us on social media:</p>
+              <div className="flex justify-center sm:justify-start gap-3">
+                {[
+                  {icon: iconFacebook, alt: 'Facebook', color: 'text-blue-600'},
+                  {icon: iconX, alt: 'X', color: 'text-black'},
+                  {icon: iconInstagram, alt: 'Instagram', color: 'text-pink-600'},
+                  {icon: iconLinkedin, alt: 'Linkedin', color: 'text-blue-800'}
+                ].map((social) => (
+                  <a 
+                    key={social.alt} 
+                    href="#" 
+                    className={`${social.color} hover:opacity-70 transition duration-300`}
+                  >
+                    <div className="w-6 sm:w-8 h-6 sm:h-8 flex items-center justify-center">
+                      <img src={social.icon} alt={social.alt} className="h-4 sm:h-6" />
+                    </div>
+                  </a>
+                ))}
               </div>
             </div>
           </div>
@@ -159,40 +124,58 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="pt-6 pb-4">
-          <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-4">
-            {/* Texto de Copyright */}
-            <div className="flex flex-col items-center md:items-start">
-              <p className="text-sm text-gray-600 text-center md:text-left">
-                Copyright 2024 © Jinstore WooCommerce WordPress Theme. All rights reserved. Powered by <span className='text-purple-600 font-semibold'><a href="https://layout-novo-portfolio.vercel.app/">✓ MSB</a></span>.
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+              <p className="text-xs text-gray-600 text-center md:text-left">
+                Copyright 2024 © Jinstore WooCommerce WordPress Theme. All rights reserved. 
+                Powered by <span className='text-purple-600 font-semibold'>
+                  <a href="https://layout-novo-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">✓ MSB</a>
+                </span>
               </p>
-              {/* Imagens */}
-              <div className="flex gap-3 mt-3">
-                <img src={iconVisa} alt="Visa" className="h-6" />
-                <img src={iconMastercard} alt="Mastercard" className="h-6" />
-                <img src={iconPaypal} alt="PayPal" className="h-6" />
-                <img src={iconSkrill} alt="Skrill" className="h-6" />
-                <img src={iconKlarna} alt="Klarna" className="h-6" />
+              <div className="flex gap-3 mt-3 justify-center md:justify-start">
+                {[iconVisa, iconMastercard, iconPaypal, iconSkrill, iconKlarna].map((icon, index) => (
+                  <img 
+                    key={index} 
+                    src={icon} 
+                    alt={`Payment Method ${index + 1}`} 
+                    className="h-4 sm:h-6" 
+                  />
+                ))}
               </div>
             </div>
 
-            {/* Links de navegação */}
-            <div className="flex gap-4 text-sm">
-              <a href="#" className=" hover:text-gray-800 underline">
-                Terms and Conditions
-              </a>
-              <a href="#" className=" hover:text-gray-800 underline">
-                Privacy Policy
-              </a>
-              <a href="#" className=" hover:text-gray-800 underline">
-                Order Tracking
-              </a>
+            <div className="flex flex-col sm:flex-row gap-4 text-xs text-center">
+              {['Terms and Conditions', 'Privacy Policy', 'Order Tracking'].map((link) => (
+                <a 
+                  key={link} 
+                  href="#" 
+                  className="hover:text-gray-800 underline transition duration-300"
+                >
+                  {link}
+                </a>
+              ))}
             </div>
           </div>
         </div>
-
       </div>
     </footer>
   );
+};
+
+// Helper function with explicit type annotation
+const getSectionLinks = (index: number): string[] => {
+  const sections: string[][] = [
+    ['Sell on Grogin', 'Sell Your Services on Grogin', 'Sell on Grogin Business', 
+     'Sell Your Apps on Grogin', 'Become an Affiliate', 'Advertise Your Products', 
+     'Self-Publish with Us', 'Become an Blowwe Vendor'],
+    ['Accessibility Statement', 'Your Orders', 'Returns & Replacements', 
+     'Shipping Rates & Policies', 'Refund and Returns Policy', 'Privacy Policy', 
+     'Terms and Conditions', 'Cookie Settings', 'Help Center'],
+    ['Careers for Grogin', 'About Grogin', 'Investor Relations', 
+     'Grogin Devices', 'Customer reviews', 'Social Responsibility', 
+     'Store Locations']
+  ];
+  return sections[index];
 };
 
 export default Footer;

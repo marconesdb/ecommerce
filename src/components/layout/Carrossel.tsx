@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import '../../App.css';
+import carrossel1 from '../../assets/images/img-carrossel-1.svg'
+import carrossel2 from '../../assets/images/img-carrossel-2.svg'
+import carrossel3 from '../../assets/images/img-carrossel-3.svg'
+import carrossel4 from '../../assets/images/img-carrossel-4.svg'
+
 
 interface CarouselProps {
   isDropdownOpen: boolean;
@@ -58,7 +63,7 @@ const Carousel: React.FC<CarouselProps> = ({ isDropdownOpen }) => {
         </div>
       </div>
       ),
-      imageUrl: "/img-carrossel-1.svg",
+      imageUrl: carrossel1,
       bgStyle: ""
     },
 
@@ -113,7 +118,7 @@ const Carousel: React.FC<CarouselProps> = ({ isDropdownOpen }) => {
         </div>
       </div>
       ),
-      imageUrl: "/img-carrossel-2.svg",
+      imageUrl:carrossel2,
       bgStyle: ""
     },
 
@@ -169,7 +174,8 @@ const Carousel: React.FC<CarouselProps> = ({ isDropdownOpen }) => {
         </div>
       </div>
       ),
-      imageUrl: "/img-carrossel-3.svg",
+     
+      imageUrl:carrossel3,
       bgStyle: ""
     },
 
@@ -217,7 +223,8 @@ const Carousel: React.FC<CarouselProps> = ({ isDropdownOpen }) => {
         </div>
       </div>
       ),
-      imageUrl: "/img-carrossel-4.svg",
+    
+      imageUrl:carrossel4,
       bgStyle: ""
     },
   ];
