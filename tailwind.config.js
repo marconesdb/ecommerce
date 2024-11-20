@@ -14,6 +14,7 @@ export default {
         customgreen: '#166534',
         customPeach: '#ffedd5',
         customBrown: '#7C2D12', 
+        customGrayy: '#D1D5DB', 
       },
       screens: {
         '2xl': '1640px', // Define um breakpoint para telas maiores que 1640px

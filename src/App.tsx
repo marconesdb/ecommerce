@@ -3,6 +3,8 @@ import Header from './components/layout/Header';  // Importação do componente 
 import Navbar from './components/layout/Navbar';  // Importação do componente Navbar
 import Carousel from './components/layout/Carrossel';  // Importação do componente Carousel
 
+import Footer from './components/layout/Footer'
+
 const App: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -20,6 +22,8 @@ const App: React.FC = () => {
       <main className="w-full mx-auto  py-6">
         <Carousel isDropdownOpen={isDropdownOpen} />
       </main>
+
+      <Footer/>
     </div>
   );
 };

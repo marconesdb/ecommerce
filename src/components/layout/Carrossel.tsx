@@ -208,7 +208,7 @@ const Carousel: React.FC<CarouselProps> = ({ isDropdownOpen }) => {
             {/* CTA Section - Improved mobile layout */}
             <div className="flex items-start sm:items-center flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
               {/* Button - Adjusted size for mobile */}
-              <button className="w-20 sm:w-32 flex items-center justify-center gap-2 rounded-full bg-white px-3 sm:px-6 py-1.5 sm:py-3 text-xs sm:text-sm text-black hover:bg-customBrown font-bold whitespace-nowrap">
+              <button className="w-24 sm:w-32 flex items-center justify-center gap-2 rounded-full bg-white px-3 sm:px-6 py-1.5 sm:py-3 text-xs sm:text-sm text-black hover:bg-customBrown font-bold whitespace-nowrap">
               Shop Now <span>→</span>
             </button>
     
