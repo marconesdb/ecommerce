@@ -1,4 +1,18 @@
 import { Mail, Phone } from 'lucide-react';
+import iconPlayStore from '../../assets/icons/google-play-button.svg'
+import iconApp from '../../assets/icons/apple-store-button.svg'
+import iconFacebook from '../../assets/icons/Facebook.svg'
+import iconX from '../../assets/icons/X.svg'
+import iconInstagram from '../../assets/icons/Instagram.svg'
+import iconLinkedin from '../../assets/icons/Linkedin.svg'
+import iconVisa from '../../assets/icons/Visa.svg'
+import iconMastercard from '../../assets/icons/Mastercard.svg'
+import iconPaypal from '../../assets/icons/Paypal.svg'
+import iconSkrill from '../../assets/icons/Skrill.svg'
+import iconKlarna from '../../assets/icons/Klarna.svg'
+
+
+
 
 const Footer = () => {
   return (
@@ -114,11 +128,11 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Download our app</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <img src="/src/assets/icons/google-play-button.svg" alt="Google Play" className="h-12" />
+                <img src={iconPlayStore} className="h-12" />
                 <span className="text-xs">Download App Get -10% discount</span>
               </div>
               <div className="flex items-center gap-2">
-                <img src="/src/assets/icons/apple-store-button.svg" alt="App Store" className="h-12" />
+                <img src={iconApp} alt="App Store" className="h-12" />
                 <span className="text-xs">Download App Get -20% discount</span>
               </div>
             </div>
@@ -127,16 +141,16 @@ const Footer = () => {
               <p className="text-sm font-semibold mb-3">Follow us on social media:</p>
               <div className="flex gap-3">
                 <a href="#" className="text-blue-600 hover:text-blue-700">
-                  <div className="w-8 h-8  flex items-center justify-center"> <img src="/src/assets/icons/Facebook.svg" alt="Facebook" className="h-6" /></div>
+                  <div className="w-8 h-8  flex items-center justify-center"> <img src={iconFacebook} alt="Facebook" className="h-6" /></div>
                 </a>
                 <a href="#" className="text-black hover:text-gray-800">
-                  <div className="w-8 h-8  flex items-center justify-center"><img src="/src/assets/icons/X.svg" alt="X" className="h-6" /></div>
+                  <div className="w-8 h-8  flex items-center justify-center"><img src={iconX} alt="X" className="h-6" /></div>
                 </a>
                 <a href="#" className="text-pink-600 hover:text-pink-700">
-                  <div className="w-8 h-8   flex items-center justify-center"><img src="/src/assets/icons/Instagram.svg" alt="Instagram" className="h-6" /></div>
+                  <div className="w-8 h-8   flex items-center justify-center"><img src={iconInstagram} alt="Instagram" className="h-6" /></div>
                 </a>
                 <a href="#" className="text-blue-800 hover:text-blue-900">
-                  <div className="w-8 h-8   flex items-center justify-center"><img src="/src/assets/icons/Linkedin.svg" alt="Linkedin" className="h-6" /></div>
+                  <div className="w-8 h-8   flex items-center justify-center"><img src={iconLinkedin} alt="Linkedin" className="h-6" /></div>
                 </a>
               </div>
             </div>
@@ -153,11 +167,11 @@ const Footer = () => {
               </p>
               {/* Imagens */}
               <div className="flex gap-3 mt-3">
-                <img src="/src/assets/icons/Visa.svg" alt="Visa" className="h-6" />
-                <img src="/src/assets/icons/Mastercard.svg" alt="Mastercard" className="h-6" />
-                <img src="/src/assets/icons/Paypal.svg" alt="PayPal" className="h-6" />
-                <img src="/src/assets/icons/Skrill.svg" alt="Skrill" className="h-6" />
-                <img src="/src/assets/icons/Klarna.svg" alt="Klarna" className="h-6" />
+                <img src={iconVisa} alt="Visa" className="h-6" />
+                <img src={iconMastercard} alt="Mastercard" className="h-6" />
+                <img src={iconPaypal} alt="PayPal" className="h-6" />
+                <img src={iconSkrill} alt="Skrill" className="h-6" />
+                <img src={iconKlarna} alt="Klarna" className="h-6" />
               </div>
             </div>
 
