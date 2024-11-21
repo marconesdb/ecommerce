@@ -5,6 +5,8 @@ import Carousel from './components/layout/Carrossel';  // Importação do compon
 import Footer from './components/layout/Footer'
 import InfoCard from './components/layout/InfoCard'
 import ProductCarousel from './components/layout/ProductCarousel';
+import ProductCards from './components/products/ProductCard';
+
 
 
 const App: React.FC = () => {
@@ -26,6 +28,7 @@ const App: React.FC = () => {
       </main>
       <InfoCard />
       <ProductCarousel/>
+      <ProductCards />
       <Footer/>
     </div>
   );
