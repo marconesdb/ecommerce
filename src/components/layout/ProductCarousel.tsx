@@ -44,7 +44,7 @@ const ProductCard = ({ product }: { product: Product }) => (
           <span className="text-sm font-medium text-orange-400">{product.tag}</span>
           <h3 className="text-[22px] font-bold mt-1 text-black w-[250px] break-words">{product.title}</h3>
           <p className="text-sm opacity-90 mt-1 text-[13px] text-customGray">{product.description}</p>
-          <button className="mt-3 flex items-center gap-2 text-sm font-bold bg-white text-black p-2 border border-gray-300 rounded-full hover:bg-purple-600">
+          <button className="mt-3 flex items-center gap-2 text-sm font-bold bg-white text-black p-2 border border-gray-300 hover:text-white rounded-full hover:bg-purple-600">
             Shop Now <ArrowRight className="w-4 h-4" />
           </button>
         </div>
@@ -68,7 +68,7 @@ const ProductCarousel = () => {
             Don't miss this opportunity at a special discount just for this week.
           </p>
         </div>
-        <button className="flex items-center gap-2 text-sm font-bold hover:bg-purple-600 border border-gray-300 rounded-full px-4 py-2">
+        <button className="flex items-center gap-2 text-sm font-bold hover:bg-purple-600 border border-gray-300  hover:text-white rounded-full px-4 py-2">
           View All <ArrowRight className="w-4 h-4" />
         </button>
       </div>

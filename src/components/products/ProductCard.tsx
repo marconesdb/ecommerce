@@ -68,7 +68,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
             </span>
           </div>
         </div>
-        <button className="w-full text-purple-600 font-medium py-2 px-2 mt-4 border border-purple-600 rounded-full">
+        <button className="w-full text-purple-600 font-medium py-2 px-2 mt-4 border border-purple-600 rounded-full transition-all duration-300 ease-in-out hover:bg-purple-600 hover:text-white transform hover:scale-[1.02] hover:shadow-md active:scale-[0.98]">
           Add to cart
         </button>
       </div>
