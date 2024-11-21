@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';  // Importação do componente 
 import Carousel from './components/layout/Carrossel';  // Importação do componente Carousel
 import Footer from './components/layout/Footer'
 import InfoCard from './components/layout/InfoCard'
+import ProductCarousel from './components/layout/ProductCarousel';
 
 
 const App: React.FC = () => {
@@ -24,7 +25,7 @@ const App: React.FC = () => {
         <Carousel isDropdownOpen={isDropdownOpen} />
       </main>
       <InfoCard />
-      
+      <ProductCarousel/>
       <Footer/>
     </div>
   );
