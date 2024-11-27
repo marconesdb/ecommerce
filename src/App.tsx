@@ -6,6 +6,7 @@ import Footer from './components/layout/Footer'
 import InfoCard from './components/layout/InfoCard'
 import ProductCarousel from './components/layout/ProductCarousel';
 import ProductCards from './components/products/ProductCard';
+import FeaturedProducts from './components/layout/FeaturedProducts';
 
 
 
@@ -29,6 +30,7 @@ const App: React.FC = () => {
       <InfoCard />
       <ProductCarousel/>
       <ProductCards />
+      <FeaturedProducts />
       <Footer/>
     </div>
   );

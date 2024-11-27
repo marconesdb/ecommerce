@@ -63,8 +63,8 @@ const ProductCarousel = () => {
       </div>
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between px-8 py-4">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4 md:mb-0">
-          <h2 className="text-2xl font-bold">New Arrivals</h2>
-          <p className="text-gray-600 text-sm mt-2">
+          <h2 className="text-[18px] font-bold">New Arrivals</h2>
+          <p className="text-gray-600 text-sm mt-2 text-[13px]">
             Don't miss this opportunity at a special discount just for this week.
           </p>
         </div>
