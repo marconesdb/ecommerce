@@ -14,10 +14,12 @@ export default {
         customgreen: '#166534',
         customPeach: '#ffedd5',
         customBrown: '#7C2D12', 
-        customGrayy: '#D1D5DB', 
+        customGrayy: '#D1D5DB',
+        warmBeige: '#FFEDD5', 
       },
       screens: {
         '2xl': '1640px', // Define um breakpoint para telas maiores que 1640px
+        '360-639': { min: '360px', max: '639px' },
       },
     },
   },

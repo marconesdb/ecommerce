@@ -36,7 +36,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   `;
 
   return (
-    <div className={`bg-white overflow-hidden border border-gray-300 h-[400px] flex flex-col ${borderRadiusClasses}`}>
+    <div className={`bg-white overflow-hidden border border-gray-300 h-[400px]  flex flex-col ${borderRadiusClasses}`}>
       <div className="relative mt-4">
         <img src={image} alt={title} className="w-full h-40 object-contain" />
         {discount > 0 && (
