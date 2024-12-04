@@ -213,7 +213,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         {displayProducts.map((product, index) => (
           <div
             key={index}
-            className={`xs:mt-4 border p-4 flex flex-col w-full max-w-[485px] h-auto transition-shadow 
+            className={`xs:mt-4 border p-4 flex flex-col w-full max-w-[614px] h-auto transition-shadow 
               sm:last:rounded-br-lg
               ${index === 0 ? 'xs:rounded-lg' : ''}
               ${index === 0 ? 'sm:rounded-tl-lg' : ''}
