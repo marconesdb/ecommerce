@@ -230,7 +230,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 
                 <Heart 
                   size={18} 
-                  className="absolute top-0 right-0 sm:left-24 w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer transition-colors" 
+                  className="absolute top-0 right-0 sm:left-24 xl:left-32 lg:left-28  md:left-30  w-6 h-6 text-gray-500 hover:text-red-500 cursor-pointer transition-colors" 
                 />
                 
                 {renderImage(product)}
