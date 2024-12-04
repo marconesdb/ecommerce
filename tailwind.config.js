@@ -19,7 +19,7 @@ export default {
       },
       screens: {
         '2xl': '1640px', // Define um breakpoint para telas maiores que 1640px
-        '360-639': { min: '360px', max: '639px' },
+        'xs': { min: '360px', max: '639px' },
       },
     },
   },

@@ -9,7 +9,6 @@ import FireSmith from '../../assets/images/FireSmith.svg';
 import Organic from '../../assets/images/Organic.svg';
 import Coldsale from '../../assets/images/Coldsale.svg';
 
-// Mantive todas as interfaces e tipagens originais
 interface Product {
   discount?: number;
   image: string;
@@ -214,11 +213,22 @@ const ProductCard: React.FC<ProductCardProps> = ({
         {displayProducts.map((product, index) => (
           <div
             key={index}
-            className={`border p-4 flex flex-col w-full max-w-[485px] h-auto transition-shadow 
-              sm:first:rounded-tl-lg 
+            className={`xs:mt-4 border p-4 flex flex-col w-full max-w-[485px] h-auto transition-shadow 
               sm:last:rounded-br-lg
-              ${index === 2 ? 'sm:rounded-tr-lg' : ''}
-              ${index === 3 ? 'sm:rounded-bl-lg' : ''}`}
+              ${index === 0 ? 'xs:rounded-lg' : ''}
+              ${index === 0 ? 'sm:rounded-tl-lg' : ''}
+              ${index === 1 ? 'xs:rounded-lg' : ''}
+              ${index === 1 ? 'sm:rounded-tr-lg' : ''}
+              ${index === 2 ? 'xs:rounded-lg' : ''}
+              ${index === 2 ? 'lg:rounded-tr-lg' : ''}
+              ${index === 1 ? 'lg:rounded-none' : ''}
+              ${index === 3 ? 'xs:rounded-lg' : ''}
+              ${index === 3 ? 'lg:rounded-bl-lg' : ''}
+              ${index === 4 ? 'xs:rounded-lg' : ''}
+              ${index === 4 ? 'sm:rounded-bl-lg' : ''}
+              ${index === 4 ? 'lg:rounded-none' : ''}
+              ${index === 5 ? 'xs:rounded-lg' : ''}
+              ${index === 5 ? 'sm:rounded-br-lg' : ''}`}
           >
             <div className="flex flex-col sm:flex-row relative">
               <div className="w-full sm:w-1/3 flex flex-col justify-start items-center relative">
