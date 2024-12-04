@@ -6,7 +6,7 @@ import Margherita from '../../assets/images/Margherita.svg';
 import Cantaloupe from '../../assets/images/Cantaloupe.svg';
 import AngelSoft from '../../assets/images/AngelSoft.svg';
 import Organic from '../../assets/images/Organic.svg'
-import Goldsale from '../../assets/images/Goldsale.svg'
+import Coldsale from '../../assets/images/Coldsale.svg'
 
 interface ProductCardProps {
   image: string;
@@ -88,7 +88,7 @@ const ProductCards: React.FC = () => {
     },
     {
       image: GreatValue,
-      additionalImage: Goldsale,
+      additionalImage: Coldsale,
       title: 'Great Value Rising Crust Frozen Pizza, Supreme',
       originalPrice: 9.99,
       discountedPrice: 8.99,
@@ -103,7 +103,7 @@ const ProductCards: React.FC = () => {
     },
     {
       image: Margherita,
-      additionalImage: Goldsale,
+      additionalImage: Coldsale,
       title: 'California Pizza Kitchen Margherita, Crispy Thin Crus…',
       originalPrice: 14.77,
       discountedPrice: 11.77,

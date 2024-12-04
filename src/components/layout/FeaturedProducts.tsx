@@ -94,8 +94,8 @@ const ProductCarousel: React.FC = () => {
             Do not miss the current offers until the end of March.
           </p>
         </div>
-        <button className="flex items-center gap-2 text-xs xs:text-sm font-bold bg-white text-black p-1.5 xs:p-2 border border-gray-300 hover:text-white rounded-full hover:bg-purple-600">
-          View All <ArrowRight className="w-3 h-3 xs:w-4 xs:h-4" />
+        <button className="flex items-center gap-2 text-sm font-bold hover:bg-purple-600 border border-gray-300  hover:text-white rounded-full px-4 py-2">
+        View All <ArrowRight className="w-4 h-4" />
         </button>
       </div>
     </div>
