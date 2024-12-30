@@ -67,7 +67,7 @@ const ProductCardBanner: React.FC = () => {
       bgColor: '',
       height: 'h-96 lg:h-[430px]',
       colSpan: 'col-span-2',
-      tagText: '', // Added empty string
+      tagText: '', 
       subtitle: '', // Added empty string
       buttonText: '', // Added empty string
       content: 'Philadelphia Original Cream Cheese Spread – 12oz',
