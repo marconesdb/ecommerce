@@ -34,7 +34,7 @@ const App: React.FC = () => {
       <ProductCards />
       <FeaturedProducts />
       <ProductGrid />
-      <ProductCardBanner />
+      {/* <ProductCardBanner /> */}
       <BannerSection/>
       {/* <BannerPromo/> */}
       <Footer/>
