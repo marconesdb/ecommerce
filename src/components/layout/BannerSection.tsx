@@ -39,7 +39,7 @@ const Banner: React.FC<BannerProps> = ({ title, subtitle, buttonText, imageUrl, 
 
 const BannerSection: React.FC = () => {
   return (
-    <section className="space-y-8">
+    <section className="space-y-8 mt-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <Banner
           highlightText="Only This Week"
