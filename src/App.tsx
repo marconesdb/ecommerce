@@ -10,7 +10,7 @@ import FeaturedProducts from './components/layout/FeaturedProducts';
 import ProductGrid from './components/layout/ProductGrid'
 import BannerSection from './components/layout/BannerSection';
 import ProductCardBanner from './components/layout/ProductCardBanner';
-// import BannerPromo from './components/layout/BannerPromo';
+import BannerPromo from './components/layout/BannerPromo';
 
 const App: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -34,9 +34,9 @@ const App: React.FC = () => {
       <ProductCards />
       <FeaturedProducts />
       <ProductGrid />
-      <ProductCardBanner />
       <BannerSection/>
-      {/* <BannerPromo/> */}
+      <ProductCardBanner />
+      <BannerPromo/>
       <Footer/>
     </div>
   );
