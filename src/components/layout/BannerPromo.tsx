@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import bannerPromo1 from '../../assets/images/desconto50.svg';
-import bannerPromo2 from '../../assets/images/promo.png';
+import bannerPromo2 from '../../assets/images/bannerPromo2.png';
 
 const BannerPromo = () => {
   return (
@@ -33,21 +33,23 @@ const BannerPromo = () => {
                         opacity-30 xs:opacity-40 sm:opacity-50 md:opacity-75 lg:opacity-100 xl:opacity-100">
           {/* Image 1 */}
           <div
-            className="hidden md:block flex-1 bg-contain bg-no-repeat 
-                       bg-right xs:bg-right sm:bg-right md:bg-right lg:bg-right xl:bg-right"
+            className="hidden  lg:block flex-1 bg-contain bg-no-repeat bg-right xs:bg-center sm:bg-center md:bg-center lg:bg-center xl:bg-center lg:ml-[610px] transform scale-75
+"
             style={{
               backgroundImage: `url(${bannerPromo1})`,
+              height: 'auto', // Ajuste para manter proporção
             }}
           ></div>
           {/* Image 2 */}
           <div
-            className="flex-1 overflow-hidden"
+            className="hidden lg:block flex-1 overflow-hidden"
             style={{
               clipPath: 'circle(100% at center)',
               backgroundImage: `url(${bannerPromo2})`,
-              backgroundPosition: 'top',
-              backgroundSize: 'cover',
+              backgroundPosition: '',
+              backgroundSize: 'contain',
               backgroundRepeat: 'no-repeat',
+              height: 'auto', // Ajuste para manter proporção
             }}
           ></div>
         </div>
