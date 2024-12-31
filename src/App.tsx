@@ -9,7 +9,7 @@ import ProductCards from './components/products/ProductCard';
 import FeaturedProducts from './components/layout/FeaturedProducts';
 import ProductGrid from './components/layout/ProductGrid'
 import BannerSection from './components/layout/BannerSection';
-//import ProductCardBanner from './components/layout/ProductCardBanner';
+import ProductCardBanner from './components/layout/ProductCardBanner';
 // import BannerPromo from './components/layout/BannerPromo';
 
 const App: React.FC = () => {
@@ -34,7 +34,7 @@ const App: React.FC = () => {
       <ProductCards />
       <FeaturedProducts />
       <ProductGrid />
-      {/* <ProductCardBanner /> */}
+      <ProductCardBanner />
       <BannerSection/>
       {/* <BannerPromo/> */}
       <Footer/>
