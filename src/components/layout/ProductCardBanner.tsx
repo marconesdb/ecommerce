@@ -239,7 +239,7 @@ const ResponsiveGrid: React.FC = () => {
     if (index === 5) roundedClass = 'sm:rounded-bl-none xs:rounded-tl-lg xs:rounded-tr-lg xs:rounded-br-lg  xs:rounded-bl-lg lg:rounded-bl-lg';
     if (index === 6) roundedClass = 'xs:rounded-tl-lg xs:rounded-tr-lg xs:rounded-br-lg  xs:rounded-bl-lg';
     if (index === 7) roundedClass = 'xs:rounded-tl-lg xs:rounded-tr-lg xs:rounded-br-lg  xs:rounded-bl-lg';
-    if (index === 8) roundedClass = 'xs:rounded-tl-lg xs:rounded-tr-lg xs:rounded-br-lg  xs:rounded-bl-lg sm:rounded-bl-lg';
+    if (index === 8) roundedClass = 'xs:rounded-tl-lg xs:rounded-tr-lg xs:rounded-br-lg  xs:rounded-bl-lg sm:rounded-bl-lg md:rounded-bl-lg lg:rounded-bl-none xl:rounded-bl-none';
     if (index === 9) roundedClass = 'rounded-br-lg xs:rounded-tl-lg xs:rounded-tr-lg xs:rounded-br-lg  xs:rounded-bl-lg';
 
     return (
