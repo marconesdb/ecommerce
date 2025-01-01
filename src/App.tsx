@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import Header from './components/layout/Header';  // Importação do componente Header
-import Navbar from './components/layout/Navbar';  // Importação do componente Navbar
-import Carousel from './components/layout/Carrossel';  // Importação do componente Carousel
-import Footer from './components/layout/Footer'
-import InfoCard from './components/layout/InfoCard'
-import ProductCarousel from './components/layout/ProductCarousel';
-import ProductCards from './components/products/ProductCard';
-import FeaturedProducts from './components/layout/FeaturedProducts';
-import ProductGrid from './components/layout/ProductGrid'
-import BannerSection from './components/layout/BannerSection';
-import ProductCardBanner from './components/layout/ProductCardBanner';
-import BannerPromo from './components/layout/BannerPromo';
-import Testimonial from './components/layout/Testimonial'
+import Header from './components/Header';  // Importação do componente Header
+import Navbar from './components/Navbar';  // Importação do componente Navbar
+import Footer from './components/Footer'
+import Carousel from '../src/Pages/Home/Carrossel';  // Importação do componente Carousel
+import InfoCard from '../src/Pages/Home/InfoCard'
+import ProductCarousel from '../src/Pages/Home/ProductCarousel';
+import ProductCards from '../src/Pages/Home/ProductCard';
+import FeaturedProducts from '../src/Pages/Home/FeaturedProducts';
+import ProductGrid from '../src/Pages/Home/ProductGrid'
+import BannerSection from '../src/Pages/Home/BannerSection';
+import ProductCardBanner from '../src/Pages/Home/ProductCardBanner';
+import BannerPromo from '../src/Pages/Home/BannerPromo';
+import Testimonial from '../src/Pages/Home/Testimonial'
 
 
 const App: React.FC = () => {

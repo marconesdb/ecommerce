@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Search, MapPin, Heart, ShoppingCart, Menu, X } from 'lucide-react';
-import logo from '../../assets/images/logo.svg';
-import userIcon from '../../assets/icons/User.svg';
+import logo from '../assets/images/logo.svg';
+import userIcon from '../assets/icons/User.svg';
 
 interface HeaderProps {
   deliveryTime?: string;

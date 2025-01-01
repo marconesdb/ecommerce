@@ -1,15 +1,15 @@
 import { Mail, Phone } from 'lucide-react';
-import iconPlayStore from '../../assets/icons/google-play-button.svg'
-import iconApp from '../../assets/icons/apple-store-button.svg'
-import iconFacebook from '../../assets/icons/Facebook.svg'
-import iconX from '../../assets/icons/X.svg'
-import iconInstagram from '../../assets/icons/Instagram.svg'
-import iconLinkedin from '../../assets/icons/Linkedin.svg'
-import iconVisa from '../../assets/icons/Visa.svg'
-import iconMastercard from '../../assets/icons/Mastercard.svg'
-import iconPaypal from '../../assets/icons/Paypal.svg'
-import iconSkrill from '../../assets/icons/Skrill.svg'
-import iconKlarna from '../../assets/icons/Klarna.svg'
+import iconPlayStore from '../assets/icons/google-play-button.svg'
+import iconApp from '../assets/icons/apple-store-button.svg'
+import iconFacebook from '../assets/icons/Facebook.svg'
+import iconX from '../assets/icons/X.svg'
+import iconInstagram from '../assets/icons/Instagram.svg'
+import iconLinkedin from '../assets/icons/Linkedin.svg'
+import iconVisa from '../assets/icons/Visa.svg'
+import iconMastercard from '../assets/icons/Mastercard.svg'
+import iconPaypal from '../assets/icons/Paypal.svg'
+import iconSkrill from '../assets/icons/Skrill.svg'
+import iconKlarna from '../assets/icons/Klarna.svg'
 
 const Footer = () => {
   return (

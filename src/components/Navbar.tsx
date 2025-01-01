@@ -1,16 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ChevronDown, X } from 'lucide-react';
-import AllCategories from '../../assets/icons/allCategories.svg';
-import AppleIcon from '../../assets/icons/apple.svg';
-import MeatIcon from '../../assets/icons/meat.svg';
-import DairyIcon from '../../assets/icons/boiled-egg.svg';
-import BakeryIcon from '../../assets/icons/toast-bread.svg';
-import BeverageIcon from '../../assets/icons/cup.svg';
-import FrozenIcon from '../../assets/icons/snowflake.svg';
-import SnackIcon from '../../assets/icons/bar.svg';
-import GroceryIcon from '../../assets/icons/wheat.svg';
-import BabyIcon from '../../assets/icons/baby-boy.svg';
-import HealthcareIcon from '../../assets/icons/toilet-paper.svg';
+import AllCategories from '../assets/icons/allCategories.svg';
+import AppleIcon from '../assets/icons/apple.svg';
+import MeatIcon from '../assets/icons/meat.svg';
+import DairyIcon from '../assets/icons/boiled-egg.svg';
+import BakeryIcon from '../assets/icons/toast-bread.svg';
+import BeverageIcon from '../assets/icons/cup.svg';
+import FrozenIcon from '../assets/icons/snowflake.svg';
+import SnackIcon from '../assets/icons/bar.svg';
+import GroceryIcon from '../assets/icons/wheat.svg';
+import BabyIcon from '../assets/icons/baby-boy.svg';
+import HealthcareIcon from '../assets/icons/toilet-paper.svg';
 
 interface NavbarProps {
   onDropdownToggle: (isOpen: boolean, dropdownWidth: number) => void;
