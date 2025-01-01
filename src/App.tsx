@@ -11,6 +11,8 @@ import ProductGrid from './components/layout/ProductGrid'
 import BannerSection from './components/layout/BannerSection';
 import ProductCardBanner from './components/layout/ProductCardBanner';
 import BannerPromo from './components/layout/BannerPromo';
+import Testimonial from './components/layout/Testimonial'
+
 
 const App: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -37,6 +39,7 @@ const App: React.FC = () => {
       <BannerSection/>
       <ProductCardBanner />
       <BannerPromo/>
+      <Testimonial />
       <Footer/>
     </div>
   );
