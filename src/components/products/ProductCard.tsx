@@ -67,7 +67,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   );
 
   return (
-    <div className={`bg-white overflow-hidden border border-gray-300 h-[400px]  flex flex-col ${borderRadiusClasses}`}>
+    <div className={`bg-white overflow-hidden border border-gray-300 h-[400px]  flex flex-col xs:w-[400px]${borderRadiusClasses}`}>
       <div className="relative mt-4">
         <img src={image} alt={title} className="w-full h-40 object-contain" />
         {discount > 0 && (
@@ -168,10 +168,10 @@ const ProductCards: React.FC = () => {
 
   return (
     <div className="w-full h-full bg-white mb-8">
-      <div className="px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex gap-4 lg:gap-0 w-full">
+      <div className="px-8 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex gap-4 lg:gap-0 w-full    ">
           {productData.map((product, index) => (
-            <div key={index} className="lg:flex-1">
+            <div key={index} className="lg:flex-1 xs:flex justify-center">
               <ProductCard
                 image={product.image}
                 additionalImage={product.additionalImage}
