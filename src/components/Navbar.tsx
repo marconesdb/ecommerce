@@ -12,9 +12,6 @@ import GroceryIcon from '../assets/icons/wheat.svg';
 import BabyIcon from '../assets/icons/baby-boy.svg';
 import HealthcareIcon from '../assets/icons/toilet-paper.svg';
 
-interface NavbarProps {
-  onDropdownToggle: (isOpen: boolean, dropdownWidth: number) => void;
-}
 
 interface MobileMenuItemProps {
   label: string;
@@ -23,7 +20,14 @@ interface MobileMenuItemProps {
   toggleOpen: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ onDropdownToggle }) => {
+// Tornando a prop opcional com o '?'
+interface NavbarProps {
+  onDropdownToggle?: (isOpen: boolean, width: number) => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ 
+  onDropdownToggle = () => {} 
+}) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement | null>(null);
@@ -251,7 +255,7 @@ const Navbar: React.FC<NavbarProps> = ({ onDropdownToggle }) => {
                 onMouseEnter={() => handleMouseEnter('dropdownHome', setDropdownHome)}
                 onMouseLeave={() => handleMouseLeave('dropdownHome', setDropdownHome)}
               >
-                <a href="#" className="text-purple-600 font-medium">Home</a>
+                <a href="/" className="hover:text-purple-600 font-medium">Home</a>
                 <ChevronDown className="text-gray-500" size={16} />
                 {dropdownHome && (
                   <div
@@ -259,7 +263,7 @@ const Navbar: React.FC<NavbarProps> = ({ onDropdownToggle }) => {
                     onMouseEnter={() => handleMouseEnter('dropdownHome', setDropdownHome)}
                     onMouseLeave={() => handleMouseLeave('dropdownHome', setDropdownHome)}
                   >
-                    <a href="#" className="block px-4 py-2 hover:bg-gray-100">Home Option 1</a>
+                    <a href="/newarrivals" className="block px-4 py-2 hover:bg-gray-100">New Arrivals</a>
                     <a href="#" className="block px-4 py-2 hover:bg-gray-100">Home Option 2</a>
                   </div>
                 )}
@@ -270,7 +274,7 @@ const Navbar: React.FC<NavbarProps> = ({ onDropdownToggle }) => {
                 onMouseEnter={() => handleMouseEnter('dropdownShop', setDropdownShop)}
                 onMouseLeave={() => handleMouseLeave('dropdownShop', setDropdownShop)}
               >
-                <a href="#" className="text-gray-600 hover:text-purple-600">Shop</a>
+                <a href="#" className="hover:text-purple-600 font-medium">Shop</a>
                 <ChevronDown className="text-gray-500" size={16} />
                 {dropdownShop && (
                   <div
@@ -284,10 +288,10 @@ const Navbar: React.FC<NavbarProps> = ({ onDropdownToggle }) => {
                 )}
               </div>
 
-              <a href="#" className="text-gray-600 hover:text-purple-600">Fruits & Vegetables</a>
-              <a href="#" className="text-gray-600 hover:text-purple-600">Beverages</a>
-              <a href="#" className="text-gray-600 hover:text-purple-600">Blog</a>
-              <a href="#" className="text-gray-600 hover:text-purple-600">Contact</a>
+              <a href="#" className="font-medium hover:text-purple-600">Fruits & Vegetables</a>
+              <a href="#" className="font-medium hover:text-purple-600">Beverages</a>
+              <a href="#" className="font-medium hover:text-purple-600">Blog</a>
+              <a href="#" className="font-medium hover:text-purple-600">Contact</a>
             </div>
 
             {/* Right side menus */}
@@ -297,7 +301,7 @@ const Navbar: React.FC<NavbarProps> = ({ onDropdownToggle }) => {
                 onMouseEnter={() => handleMouseEnter('dropdownTrending', setDropdownTrending)}
                 onMouseLeave={() => handleMouseLeave('dropdownTrending', setDropdownTrending)}
               >
-                <a href="#" className="text-gray-600 hover:text-purple-600">Trending Products</a>
+                <a href="#" className="hover:text-purple-600 font-medium">Trending Products</a>
                 <ChevronDown className="text-gray-500" size={16} />
                 {dropdownTrending && (
                   <div
@@ -311,7 +315,7 @@ const Navbar: React.FC<NavbarProps> = ({ onDropdownToggle }) => {
                 )}
               </div>
 
-              <a href="/almost-finished" className="px-2 py-1 rounded text-sm bg-gradient-to-r from-[#DC2626] to-[#EA580C] bg-clip-text text-transparent font-semibold text-[15px]">
+              <a href="/almost-finished" className="px-2 py-1 rounded text-sm bg-gradient-to-r from-[#DC2626] to-[#EA580C] bg-clip-text text-transparent font-medium text-[15px]">
                 Almost Finished
               </a>
 
@@ -323,7 +327,7 @@ const Navbar: React.FC<NavbarProps> = ({ onDropdownToggle }) => {
                 <button className="bg-gradient-to-r from-[#DC2626] to-[#EA580C] font-bold text-[10px] pl-2 pr-2 pt-1 pb-1 rounded text-white mr-1">
                   SALE
                 </button>
-                <ChevronDown className="text-gray-500" size={16} />
+                <ChevronDown className="text-red-600" size={16} />
                 {dropdownSale && (
                   <div
                     className="absolute top-full right-0 bg-white shadow-md mt-2 w-40 rounded-md z-50"
